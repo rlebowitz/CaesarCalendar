@@ -18,13 +18,13 @@ namespace CaesarCalendar.Web.Pages
         private readonly int solutionY;
 
         // new code
-        private Array<string> Months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "July", "Aug", "Sept", "Oct", "Nov", "Dec"];
-        private Array<string> Weekdays = ["Mon", "Tues", "Wed", "Thurs", "Fri", "Sat", "Sun"];
-        private Array<int> Days { get; set; } = [31];
+        private string[] Months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "July", "Aug", "Sept", "Oct", "Nov", "Dec"];
+        private string[] Weekdays = ["Mon", "Tues", "Wed", "Thurs", "Fri", "Sat", "Sun"];
+        private int[] Days { get; set; } = [31];
 
         public Home()
         {
-            for (int i = 0, i < 31; i++)
+            for (int i = 0; i < 31; i++)
             {
                 Days[i] = i;
             }

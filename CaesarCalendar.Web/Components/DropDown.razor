@@ -1,0 +1,12 @@
+﻿@typeparam TItem
+<div class="dropdown" @onfocusout="OnFocusOut">
+    <button class="btn btn-primary dropdown-toggle @(Show ? "show" : string.Empty)" data-toggle="dropdown" type="button" @onmousedown="OnMouseDown" aria-haspopup="true" aria-expanded="false">
+        @Label
+    </button>
+    <CascadingValue Value="@this">
+        <div class="dropdown-menu @(Show ? "show" : string.Empty)">
+            @ChildContent
+        </div>
+    </CascadingValue>
+</div>
+
